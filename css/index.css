@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#themeButton {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    width: 59px;
+    height: 30px;
+    border-radius: 20px;
+}
+
+#switchButton {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+#chat {
+    position: fixed;
+    width: 400px;
+    right: 0;
+    bottom: 35%;
+    left: 0;
+    margin: auto;
+    max-height: 65%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Убирает полосу прокрутки */
+#chat::-webkit-scrollbar {
+    width: 0;
+}
+
+.message {
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: 50px;
+    text-align: right;
+    padding: 12px 15px;
+    box-sizing: border-box;
+}
+
+button {
+    appearance: none;
+    border: 0;
+    border-radius: 0;
+    background: none;
+    font-size: medium;
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    color: #1f1f1f;
+    text-decoration: none;
+}
+
+img {
+    position: absolute;
+    margin: 1px;
+    width: 68px;
+    height: 68px;
+    clip-path: circle(34px at 50% 50%);
+}
+
+#photo {
+    position: fixed;
+    bottom: calc(35% + 20px);
+    left: calc(50% + 165px);
+    width: 70px;
+    height: 70px;
+    clip-path: circle(35px at 50% 50%);
+}

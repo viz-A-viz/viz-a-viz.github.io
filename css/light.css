@@ -1,0 +1,16 @@
+body {
+    color: #111111;
+    background-color: #f4f4f4;
+}
+
+#themeButton {
+    background-color: #4e4e4e;
+}
+
+#switchButton {
+    background-color: #a3d7f3;
+}
+
+.message {
+    background-color: #a3d7f3;
+}
