@@ -4,8 +4,8 @@ body {
 
 #themeButton {
     position: fixed;
-    top: 30px;
-    right: 30px;
+    bottom: 5vh;
+    left: calc(50vw - 30px);
     width: 59px;
     height: 30px;
     border-radius: 20px;
@@ -19,19 +19,15 @@ body {
 }
 
 #chat {
-    position: fixed;
-    width: 400px;
-    right: 0;
-    bottom: 35%;
-    left: 0;
-    margin: auto;
-    max-height: 65%;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    max-height: 65vh;
     overflow-y: auto;
     display: flex;
     flex-direction: column;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    width: calc(55vw - 30px);
+    max-width: 400px;
 }
 
 /* Убирает полосу прокрутки */
@@ -43,7 +39,6 @@ body {
     border-radius: 20px;
     margin-top: 10px;
     margin-left: auto;
-    margin-right: 50px;
     text-align: right;
     padding: 12px 15px;
     box-sizing: border-box;
@@ -64,6 +59,19 @@ a {
     text-decoration: none;
 }
 
+table {
+    position: absolute;
+    bottom: 35vh;
+}
+
+#photo {
+    margin-top: auto;
+
+    width: 70px;
+    height: 70px;
+    clip-path: circle(35px at 50% 50%);
+}
+
 img {
     position: absolute;
     margin: 1px;
@@ -72,11 +80,21 @@ img {
     clip-path: circle(34px at 50% 50%);
 }
 
-#photo {
-    position: fixed;
-    bottom: calc(35% + 20px);
-    left: calc(50% + 165px);
-    width: 70px;
-    height: 70px;
-    clip-path: circle(35px at 50% 50%);
+.collEmpty {
+    width: 20vw;
+    min-width: 70px;
+}
+
+.collchat {
+    width: 60vw;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+.collPhoto {
+    width: 20vw;
+    min-width: 70px;
+    vertical-align: bottom;
+    text-align: left;
+    padding-bottom: 10px;
 }
