@@ -36,7 +36,7 @@ function removeMessages() {
 
 const startArray = ['Привет, меня зовут Вадим',
   'Это мой сайт-визитка',
-  'Здесь я расскажу тебе о себе',
+  'Здесь я расскажу о себе',
   'Что тебя интересует?',
   '<button onclick="removeMessages(); chat(aboutMeArray);">Немного обо мне</button>'
   + '<br>'
