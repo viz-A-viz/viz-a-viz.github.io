@@ -14,8 +14,16 @@ function chat(arr) {
     //
     if (i < arr.length) {
       //
-      chatElement.innerHTML += `<div class='message'>${arr[i]}</div>`;
+      chatElement.innerHTML += `<div class='message'><div class='lineBlock'>${arr[i]}</div></div>`;
+      //
       const messagesList = document.getElementsByClassName('message');
+      const lineBlocksList = document.getElementsByClassName('lineBlock');
+      //
+      // Делает ширину message равной ширине инлайн элемента lineBlock
+      // (Убирает пустоты при переносе строки)
+      const newWidth = lineBlocksList[i].offsetWidth
+      messagesList[i].style.width = newWidth + 'px';
+      //
       messagesList[i].animate([
         { transform: 'scale(0,0)' }, { transform: 'scale(1,1)' },
       ], { duration: 400, easing: 'cubic-bezier(0.175, 0.885, 0.320, 1.275)' });
@@ -31,7 +39,10 @@ function chat(arr) {
 }
 
 function removeMessages() {
-  chatElement.innerHTML = '';
+  chatElement.animate([
+    {}, { transform: 'translate(20%,40%) scale(0,0)'},
+  ], { duration: 300, easing: 'cubic-bezier(.3,-0.42,.64,.2)' });
+  const timerId = setTimeout(() => { chatElement.innerHTML = ''}, 300);
 }
 
 const startArray = ['Привет, меня зовут Вадим',

@@ -1,20 +1,27 @@
-body {
+* {
+    transition: 0.3s;
     color: #f4f4f4;
+}
+
+body {
     background-color: #1f1f1f;
 }
 
 #themeButton {
+    transition: 0.3s;
     background-color: #4e4e4e;
 }
 
 #switchButton {
+    transition: 0.3s;
     background-color: #f4f4f4;
 }
 
 .message {
+    transition: 0.3s;
     background-color: #4e4e4e;
 }
 
-button {
-    color: #f4f4f4;
+button:hover {
+    color: #a3d7f3;
 }
